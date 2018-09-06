@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AMO\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-08-23 07:48+0000\n"
-"PO-Revision-Date: 2018-08-23 16:31+0000\n"
+"POT-Creation-Date: 2018-09-03 08:31+0000\n"
+"PO-Revision-Date: 2018-09-04 16:14+0000\n"
 "Last-Translator: 新垣结衣松冈茉优长泽雅美门胁麦上野树里石原里美 <eloli@foxmail.com>\n"
 "Language-Team: Chinese Simplified, China <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -1121,7 +1121,7 @@ msgid "Yes"
 msgstr "是"
 
 msgid "No"
-msgstr "取消"
+msgstr "否"
 
 #. {0} is the name of the collection.
 msgid "Edit {0}"
@@ -2466,6 +2466,9 @@ msgstr "您的附加组件列入精选时，不能更改分类。"
 msgid "Add-ons for Thunderbird and SeaMonkey are now listed and maintained on addons.thunderbird.net. You can use the same account to update your add-ons on the new site."
 msgstr "即日起，Thunderbird 与 SeaMonkey 的附加组件将上架于 addons.thunderbird.net 。您可以在该网站上使用相同账号登录更新您的附加组件。"
 
+msgid "Legacy extensions are no longer supported in Firefox."
+msgstr "Firefox 已不再支持旧式扩展。"
+
 msgid "Starting with Firefox 53, new add-ons on this site can only be WebExtensions."
 msgstr "从 Firefox 53 开始，新上架至此网站的扩展仅能为 WebExtension。"
 
@@ -3499,8 +3502,11 @@ msgstr "主题名称"
 msgid "Select a header image for your theme"
 msgstr "为您的主题选择一个标题图片"
 
-msgid "Image height should be 200 pixels"
-msgstr "图像高度应为 200 像素"
+msgid "Recommended height: 200 pixels"
+msgstr "建议高度：200px"
+
+msgid "6.9MB max"
+msgstr "最大 6.9MB"
 
 msgid "PNG, JPG, APNG, SVG or GIF (not animated)"
 msgstr "PNG、JPG、APNG、SVG 或 GIF (无动画)"
@@ -5668,6 +5674,9 @@ msgstr "版本号只能包含英文字母、数字以及这些标点符号：+*.
 msgid "WebExtension theme uploads are currently not supported."
 msgstr "目前暂不支持 WebExtension 主题的上传。"
 
+msgid "Maximum size for WebExtension themes is {0}."
+msgstr "WebExtension 主题的大小限制为 {0}。"
+
 msgid "You cannot submit this type of add-on"
 msgstr "您不能提交此类型的附加组件"
 
@@ -5920,6 +5929,42 @@ msgstr "更早的体验实验性的浏览器功能。"
 
 msgid "Get Started"
 msgstr "入门指南"
+
+msgid "Reported Status"
+msgstr "回报状态"
+
+msgid "Reported Spam"
+msgstr "已回报为垃圾留言"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+msgid "Reported Ham"
+msgstr "已回报为正常留言"
+
+msgid "Not Reported"
+msgstr "尚未回报"
+
+msgid "Content Submitted"
+msgstr "提交的内容"
+
+msgid "View Rating on site"
+msgstr "查看网站上的评分"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+msgid "Submit Ham to Akismet"
+msgstr "向 Akismet 回报为正常留言"
+
+msgid "Submit Spam to Akismet"
+msgstr "向 Akismet 回报为垃圾留言"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, python-format
+msgid "%s Ham reports submitted as Spam"
+msgstr "已将 %s 正常留言回报提交为垃圾留言"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, python-format
+msgid "%s Spam reports submitted as Ham"
+msgstr "已将 %s 垃圾留言回报提交为正常留言"
 
 msgid "About Mozilla Add-ons"
 msgstr "关于 Mozilla 附加组件"
@@ -7783,8 +7828,8 @@ msgstr "那个邮件地址没有用户。"
 
 #. L10n: {id} will be something like "13ad6a", just a random number
 #. to differentiate this user from other anonymous users.
-msgid "Anonymous user {id}"
-msgstr "匿名用户 {id}"
+msgid "Firefox user {id}"
+msgstr "Firefox 用户 {id}"
 
 msgid "My Mobile Add-ons"
 msgstr "我的移动版附加组件"

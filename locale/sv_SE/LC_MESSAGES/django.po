@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: REMORA 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-08-23 07:48+0000\n"
-"PO-Revision-Date: 2018-08-28 00:23+0000\n"
-"Last-Translator: Andreas Pettersson <az@kth.se>\n"
+"POT-Creation-Date: 2018-09-03 08:31+0000\n"
+"PO-Revision-Date: 2018-09-04 04:40+0000\n"
+"Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: The Swedish l10n-team <community-sweden@lists.mozilla.org>\n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
@@ -2510,6 +2510,9 @@ msgstr "Kategorier kan inte ändras när tillägget är utvalt."
 msgid "Add-ons for Thunderbird and SeaMonkey are now listed and maintained on addons.thunderbird.net. You can use the same account to update your add-ons on the new site."
 msgstr "Tillägg för Thunderbird och SeaMonkey är nu listade och underhållna på addons.thunderbird.net. Du kan använda samma konto för att uppdatera dina tillägg på den nya sajten."
 
+msgid "Legacy extensions are no longer supported in Firefox."
+msgstr "Äldre tillägg stöds inte längre i Firefox."
+
 msgid "Starting with Firefox 53, new add-ons on this site can only be WebExtensions."
 msgstr "Från och med Firefox 53, kan nya tillägg på denna webbplats endast vara WebExtensions."
 
@@ -3610,8 +3613,11 @@ msgstr "Temanamn"
 msgid "Select a header image for your theme"
 msgstr "Välj en bild till sidhuvudet för ditt tema"
 
-msgid "Image height should be 200 pixels"
-msgstr "Bildhöjd bör vara 200 pixlar"
+msgid "Recommended height: 200 pixels"
+msgstr "Rekommenderad höjd: 200 pixlar"
+
+msgid "6.9MB max"
+msgstr "6,9 MB max"
 
 msgid "PNG, JPG, APNG, SVG or GIF (not animated)"
 msgstr "PNG, JPG, APNG, SVG eller GIF (inte animerad)"
@@ -5811,6 +5817,9 @@ msgstr "Versionsnummer bör endast innehålla bokstäver, siffror och dessa skil
 msgid "WebExtension theme uploads are currently not supported."
 msgstr "Uppladdning av WebExtension teman stöds för närvarande inte."
 
+msgid "Maximum size for WebExtension themes is {0}."
+msgstr "Maximal storlek för WebExtension-teman är {0}."
+
 msgid "You cannot submit this type of add-on"
 msgstr "Du kan inte skicka in denna typ av tillägg"
 
@@ -6065,6 +6074,46 @@ msgstr "Få tidig tillgång till experimentella webbläsarfunktioner."
 
 msgid "Get Started"
 msgstr "Kom igång"
+
+msgid "Reported Status"
+msgstr "Rapporterad Status"
+
+msgid "Reported Spam"
+msgstr "Rapporterat Spam"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, fuzzy
+msgid "Reported Ham"
+msgstr "Rapportera en bugg"
+
+msgid "Not Reported"
+msgstr "Inte rapporterad"
+
+#, fuzzy
+msgid "Content Submitted"
+msgstr "Version inskickad"
+
+msgid "View Rating on site"
+msgstr "Visa betyg på sida"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, fuzzy
+msgid "Submit Ham to Akismet"
+msgstr "Skicka in en ny fil"
+
+#, fuzzy
+msgid "Submit Spam to Akismet"
+msgstr "Skicka in en ny fil"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, python-format
+msgid "%s Ham reports submitted as Spam"
+msgstr ""
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, python-format
+msgid "%s Spam reports submitted as Ham"
+msgstr ""
 
 msgid "About Mozilla Add-ons"
 msgstr "Om Mozilla tillägg"
@@ -7967,8 +8016,8 @@ msgstr "Ingen användare med den e-postadressen."
 
 #. L10n: {id} will be something like "13ad6a", just a random number
 #. to differentiate this user from other anonymous users.
-msgid "Anonymous user {id}"
-msgstr "Anonym användare {id}"
+msgid "Firefox user {id}"
+msgstr "Firefox-användare {id}"
 
 msgid "My Mobile Add-ons"
 msgstr "Mina Mobile-tillägg"

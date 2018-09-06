@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: addons\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-08-23 07:48+0000\n"
-"PO-Revision-Date: 2018-08-26 03:39+0000\n"
-"Last-Translator: alamanda <dian.ina@gmail.com>\n"
+"POT-Creation-Date: 2018-09-03 08:31+0000\n"
+"PO-Revision-Date: 2018-09-06 11:44+0000\n"
+"Last-Translator: Ringgo <armen.ringgo@yahoo.de>\n"
 "Language-Team: Bahasa Indonesia <id@li.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -2508,6 +2508,9 @@ msgstr "Kategori tidak dapat diubah selagi pengaya Anda diunggulkan."
 msgid "Add-ons for Thunderbird and SeaMonkey are now listed and maintained on addons.thunderbird.net. You can use the same account to update your add-ons on the new site."
 msgstr "Pengaya untuk Thunderbird dan SeaMonkey kini terdaftar dan dikelola di addons.thunderbird.net. Anda bisa menggunakan akun yang sama untuk memutakhirkan pengaya Anda di situs baru tersebut."
 
+msgid "Legacy extensions are no longer supported in Firefox."
+msgstr ""
+
 msgid "Starting with Firefox 53, new add-ons on this site can only be WebExtensions."
 msgstr "Sejak Firefox 53, pengaya baru pada situs ini hanya dapat berupa WebExtensions."
 
@@ -3390,7 +3393,7 @@ msgid "Is there anything our reviewers should bear in mind when reviewing this a
 msgstr "Apakah ada sesuatu yang harus diingat peninjau kami ketika meninjau pengaya ini?"
 
 msgid "Remember"
-msgstr ""
+msgstr "Ingat"
 
 #, python-format
 msgid ""
@@ -3603,8 +3606,11 @@ msgstr "Nama tema"
 msgid "Select a header image for your theme"
 msgstr "Pilih gambar header untuk tema Anda"
 
-msgid "Image height should be 200 pixels"
-msgstr "Tinggi gambar harus 200 pixels"
+msgid "Recommended height: 200 pixels"
+msgstr "Tinggi yang direkomendasikan: 200 piksel"
+
+msgid "6.9MB max"
+msgstr ""
 
 msgid "PNG, JPG, APNG, SVG or GIF (not animated)"
 msgstr "PNG, JPG, APNG, SVG, atau GIF (tidak digerakkan)"
@@ -5807,6 +5813,9 @@ msgstr "Nomor versi hanya bisa terdiri dari huruf, angka, dan karakter tanda bac
 msgid "WebExtension theme uploads are currently not supported."
 msgstr "Pengunggahan tema WebExtension saat ini belum didukung."
 
+msgid "Maximum size for WebExtension themes is {0}."
+msgstr ""
+
 msgid "You cannot submit this type of add-on"
 msgstr "Anda tidak dapat mengirimkan jenis pengaya ini"
 
@@ -6061,6 +6070,46 @@ msgstr "Membuka akses dini untuk fitur peramban eksperimental."
 
 msgid "Get Started"
 msgstr "Bersiap"
+
+msgid "Reported Status"
+msgstr "Status yang Dilaporkan"
+
+msgid "Reported Spam"
+msgstr "Spam yang Dilaporkan"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, fuzzy
+msgid "Reported Ham"
+msgstr "Laporkan masalah"
+
+msgid "Not Reported"
+msgstr "Tidak Dilaporkan"
+
+msgid "Content Submitted"
+msgstr "Konten Diajukan"
+
+#, fuzzy
+msgid "View Rating on site"
+msgstr "Tampilkan situs yang baru"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, fuzzy
+msgid "Submit Ham to Akismet"
+msgstr "Mengajukan berkas baru"
+
+#, fuzzy
+msgid "Submit Spam to Akismet"
+msgstr "Mengajukan berkas baru"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, python-format
+msgid "%s Ham reports submitted as Spam"
+msgstr ""
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, python-format
+msgid "%s Spam reports submitted as Ham"
+msgstr ""
 
 msgid "About Mozilla Add-ons"
 msgstr "Tentang Pengaya Mozilla"
@@ -7964,8 +8013,8 @@ msgstr "Tidak ada pengguna dengan email tersebut."
 
 #. L10n: {id} will be something like "13ad6a", just a random number
 #. to differentiate this user from other anonymous users.
-msgid "Anonymous user {id}"
-msgstr "Pengguna anonim {id}"
+msgid "Firefox user {id}"
+msgstr "Pengguna Firefox {id}"
 
 msgid "My Mobile Add-ons"
 msgstr "Pengaya Bergerak Saya"

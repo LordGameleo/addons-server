@@ -159,13 +159,12 @@ TIME_ZONE = 'UTC'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-US'
 
-# Accepted locales
-# Note: If you update this list, don't forget to also update the locale
-# permissions in the database.
+# Accepted locales.
 AMO_LANGUAGES = (
     'af',  # Afrikaans
     'ar',  # Arabic
     'ast',  # Asturian
+    'az',  # Azerbaijani
     'bg',  # Bulgarian
     'bn-BD',  # Bengali (Bangladesh)
     'bs',  # Bosnian
@@ -190,6 +189,7 @@ AMO_LANGUAGES = (
     'he',  # Hebrew
     'hsb',  # Upper Sorbian
     'hu',  # Hungarian
+    # 'ia',  # Interlingua - doesn't exist in product_details yet.
     'id',  # Indonesian
     'it',  # Italian
     'ja',  # Japanese
@@ -456,7 +456,9 @@ SECURE_HSTS_SECONDS = 31536000
 # to using `Port` if `X-Forwarded-Port` isn't set.
 USE_X_FORWARDED_PORT = True
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
+    # Test if it's an API request first so later middlewares don't need to.
+    'olympia.api.middleware.IdentifyAPIRequestMiddleware',
     # Gzip (for API only) middleware needs to be executed after every
     # modification to the response, so it's placed at the top of the list.
     'olympia.api.middleware.GZipMiddlewareForAPIOnly',
@@ -482,11 +484,7 @@ MIDDLEWARE_CLASSES = (
     # CSP and CORS need to come before CommonMiddleware because they might
     # need to add headers to 304 responses returned by CommonMiddleware.
     'csp.middleware.CSPMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-
-    # This middleware does nothing, it's there for backwards-compatibility.
-    # Django < 1.10 checks for its presence to make session key rotation work.
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+    'olympia.amo.middleware.CorsMiddleware',
 
     # Enable conditional processing, e.g ETags.
     'django.middleware.http.ConditionalGetMiddleware',
@@ -1570,7 +1568,7 @@ MAX_IMAGE_UPLOAD_SIZE = 4 * 1024 * 1024
 MAX_VIDEO_UPLOAD_SIZE = 4 * 1024 * 1024
 MAX_PHOTO_UPLOAD_SIZE = MAX_ICON_UPLOAD_SIZE
 MAX_PERSONA_UPLOAD_SIZE = 300 * 1024
-MAX_REVIEW_ATTACHMENT_UPLOAD_SIZE = 5 * 1024 * 1024
+MAX_STATICTHEME_SIZE = 7 * 1024 * 1024
 
 # File uploads should have -rw-r--r-- permissions in order to be served by
 # nginx later one. The 0o prefix is intentional, this is an octal value.

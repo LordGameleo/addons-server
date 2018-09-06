@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: REMORA 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-08-23 07:48+0000\n"
-"PO-Revision-Date: 2018-08-09 16:24+0000\n"
+"POT-Creation-Date: 2018-09-03 08:31+0000\n"
+"PO-Revision-Date: 2018-08-28 20:37+0000\n"
 "Last-Translator: Juraj Cigáň <kusavica@gmail.com>\n"
 "Language-Team: Mozilla.sk <l10n@mozilla.sk>\n"
 "Language: sk\n"
@@ -140,7 +140,7 @@ msgstr[2] "Každá značka musí mať aspoň {0} znakov."
 
 #, python-format
 msgid "URL domain must be one of [%s], or a subdomain."
-msgstr ""
+msgstr "Doména v URL adrese musí byť jedna z týchto [%s], alebo ich subdoména."
 
 msgid "Categories cannot be changed while your add-on is featured for this application."
 msgstr "Pokiaľ je doplnok v zozname odporúčaných, nie je možné zmeniť jeho kategórie."
@@ -2583,6 +2583,9 @@ msgstr "Pokiaľ je doplnok v zozname odporúčaných, nie je možné zmeniť jeh
 msgid "Add-ons for Thunderbird and SeaMonkey are now listed and maintained on addons.thunderbird.net. You can use the same account to update your add-ons on the new site."
 msgstr ""
 
+msgid "Legacy extensions are no longer supported in Firefox."
+msgstr ""
+
 msgid "Starting with Firefox 53, new add-ons on this site can only be WebExtensions."
 msgstr "Od Firefoxu 53 môžu byť nové doplnky na tejto stránke len typu WebExtensions."
 
@@ -3075,6 +3078,8 @@ msgid ""
 "If your add-on has a support website or forum, enter its address here. If your website is localized into other languages, multiple translations of this field can be added. It is only relevant for "
 "listed add-ons."
 msgstr ""
+"Ak má váš doplnok stránku podpory alebo fórum, uveďte ich adresu tu. Ak je vaša webová stránka preložená do viacerých jazykov, môžete pridať viacero prekladov tohto poľa. Toto pole je relevantne "
+"len pre uverejnené doplnky."
 
 msgid "Technical Details"
 msgstr "Technické podrobnosti"
@@ -3679,8 +3684,12 @@ msgstr "názov témy"
 msgid "Select a header image for your theme"
 msgstr "Vyberte obrázok hlavičky pre vašu tému."
 
-msgid "Image height should be 200 pixels"
+#, fuzzy
+msgid "Recommended height: 200 pixels"
 msgstr "Výška obrázku by mala byť 200 pixelov"
+
+msgid "6.9MB max"
+msgstr ""
 
 msgid "PNG, JPG, APNG, SVG or GIF (not animated)"
 msgstr "PNG, JPG, APNG, SVG alebo GIF (nie animovaný)"
@@ -6062,6 +6071,9 @@ msgstr "Číslo verzie môže obsahovať len čísla, písmená a nasledovné zn
 msgid "WebExtension theme uploads are currently not supported."
 msgstr ""
 
+msgid "Maximum size for WebExtension themes is {0}."
+msgstr ""
+
 msgid "You cannot submit this type of add-on"
 msgstr "Pridávanie takéhoto typu doplnku nie je povolené"
 
@@ -6319,6 +6331,50 @@ msgstr "Objavte experimentálne funkcie prehliadača medzi prvými."
 
 msgid "Get Started"
 msgstr "Začíname"
+
+#, fuzzy
+msgid "Reported Status"
+msgstr "Stav stránky"
+
+#, fuzzy
+msgid "Reported Spam"
+msgstr "Typ správy"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, fuzzy
+msgid "Reported Ham"
+msgstr "Nahlásiť chybu"
+
+#, fuzzy
+msgid "Not Reported"
+msgstr "Nehodnotené"
+
+#, fuzzy
+msgid "Content Submitted"
+msgstr "Poznámky k verzii"
+
+#, fuzzy
+msgid "View Rating on site"
+msgstr "Navštívte novú stránku"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, fuzzy
+msgid "Submit Ham to Akismet"
+msgstr "Odoslať nový súbor"
+
+#, fuzzy
+msgid "Submit Spam to Akismet"
+msgstr "Odoslať nový súbor"
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, python-format
+msgid "%s Ham reports submitted as Spam"
+msgstr ""
+
+#. L10n: 'Ham' is the opposite of 'Spam' - i.e. not spam.
+#, python-format
+msgid "%s Spam reports submitted as Ham"
+msgstr ""
 
 msgid "About Mozilla Add-ons"
 msgstr "O stránke Doplnky Mozilly"
@@ -8308,8 +8364,9 @@ msgstr "Používateľ s touto e-mailovou adresou neexistuje."
 
 #. L10n: {id} will be something like "13ad6a", just a random number
 #. to differentiate this user from other anonymous users.
-msgid "Anonymous user {id}"
-msgstr "Anonymný používateľ {id}"
+#, fuzzy
+msgid "Firefox user {id}"
+msgstr "Firefox pre Android"
 
 msgid "My Mobile Add-ons"
 msgstr "Moje mobilné doplnky"
